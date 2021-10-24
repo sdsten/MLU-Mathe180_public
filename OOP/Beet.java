@@ -1,3 +1,9 @@
+/**********************************************************************
+ *  Re: OOP Uebungsblatt 2, Aufgabe 2                                 * 
+ *  Autor: SDW (and MLU C.S.-Dep. staff, see comments)                *
+ **********************************************************************/
+
+
 
 // this part was provided with the exercise
 import java.io.*;

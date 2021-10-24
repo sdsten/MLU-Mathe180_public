@@ -1,48 +1,52 @@
-/**********************************************************************
- *  Kleine Commandline appl. in Java zum Testen d. Loesung zu UB02-03 *
- *  Autor: SDW                                                        *
- *  Re: OOP Uebungsblatt 2, Aufgabe 3                                 * 
- **********************************************************************/
+/*******************************************************************
+ *  Kleine Commandline appl. in C zum Testen d. Loesung zu UB02-03 *
+ *  Version 2, kompakt.                                            *
+ *  Autor: SDW                                                     *
+ *  Re: OOP Uebungsblatt 2, Aufgabe 3: "Spiel (1,2,3)"             *
+ *******************************************************************/
 
-import java.util.Scanner;
+#include <stdio.h>
+#include <stdbool.h>
 
-public class Spiel123 {
-    public static void main(String args[]) {
+int main(void)
+{
+    printf("Game (1, 2, 3)\n");
 
-        Scanner scan = new Scanner(System.in);
-
-        System.out.println("Game (1, 2, 3)");
-
-        // Eingabe der Grenze
-        int limit = 0;
-        do {
-            System.out.printf("Set limit (min 8): ");
-            limit = scan.nextInt();
-        } while (limit < 8);
-
-        // Zahleneingaben der Spieler
-        boolean isPlayer1 = true;
-        int sum = 0;
-        int num = 0;
-
-        while (true) {
-            do {
-                System.out.printf("Player " + (isPlayer1 ? "1" : "2") + ": ");
-                num = scan.nextInt();
-            } while (num <=0 || num > 3);
-            sum += num;
-            if (sum > limit) {
-                break;
-            }
-            isPlayer1 = !isPlayer1;
-        }
-
-        // Ausgabe des Gewinners und der Differenz
-        int diff = sum - limit;
-        System.out.printf("Player " + (isPlayer1 ? "1" : "2") + "lost.\nDifference: ");
-        System.out.println(diff);
+    // Eingabe der Grenze
+    int limit = 0;
+    do
+    {
+        printf("Set limit (min 8): ");
+        scanf("%d", &limit);
     }
-};
+    while (limit < 8);
+
+
+    int num = 0;
+    int sum = 0;
+    bool isPlayer1 = true;
+
+    // Zahleneingaben der Spieler
+    while (1)
+    {
+        do
+        {
+            printf("Player %s: ", isPlayer1 ? "1" : "2");
+            scanf(" %d", &num);
+        }
+        while (num <=0 || num > 3);
+        sum += num;
+        isPlayer1 = !isPlayer1;
+        if (sum > limit)
+            break;
+    }
+
+    // Ausgabe des Gewinners und der Differenz
+    int diff = sum - limit;
+    printf("Player %s lost. Difference: %d \n", isPlayer1 ? "2" : "1", diff);
+
+    return 0;
+}
 
 
 /*******************************************************************
