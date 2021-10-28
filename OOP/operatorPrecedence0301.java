@@ -17,19 +17,18 @@ public class operatorPrecedence0301 {
         int k = 2;
         double f = 1.5;          // kd
         double g = 4.25;         // ld
-        double h = 0.0;          // md - missing on the Uebungsblatt
         boolean a = true;
         boolean b = false;
 
         // expressions
         System.out.println(i % j - i * k + i);
         System.out.println((((i % j) - (i * k)) + i));
-        //System.out.println(h % k + kd);
-        //System.out.println(((h % k) + kd));
+        System.out.println(g % k + f);
+        System.out.println(((g % k) + f));
         System.out.println(!b && a || b && !a);
         System.out.println((((!b) && a) || (b && (!a))));
         System.out.println(j++ - i * k / i);
-        j = 3;   // incr. operators change the value so this is to set them back
+        j = 3;   // incr. operators have side-effects so this is to restore them
         System.out.println(((j++) - ((i * k) / i)));
         j = 3;
         System.out.println(j - ++i * k / i);
