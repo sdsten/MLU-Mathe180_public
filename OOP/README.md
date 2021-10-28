@@ -1,7 +1,7 @@
 README
 ======
 
-Misc. content collection related to my OOP lecture/seminar.
+Miscellaneous content collection related to my OOP lecture/seminar.
 
 Filenames: Filenames that start with 4-digit-numbers are referring to exercises of the weekly Uebungsblaetter, eg. 0201_somefilename.c would be a litte test program in C to test a solution for Uebungsblatt 2 Aufgabe 1.
 

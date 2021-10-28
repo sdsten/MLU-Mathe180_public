@@ -5,7 +5,7 @@
 
 
 
-// this part was provided with the exercise
+// not mine, this part was provided with the exercise
 import java.io.*;
 public class Beet {
     public static void main(String[] args) throws IOException {

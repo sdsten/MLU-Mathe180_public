@@ -17,7 +17,7 @@ public class 0301_operatorPrecedence {
         int k = 2;
         double f = 1.5;          // kd
         double g = 4.25;         // ld
-        double h = 0.0;          // md
+        double h = 0.0;          // md - missing on the Uebungsblatt
         boolean a = true;
         boolean b = false;
 

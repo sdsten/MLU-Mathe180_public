@@ -2,7 +2,7 @@
  *  Kleine Commandline appl. in C zum Testen d. Loesung zu UB02-03 *
  *  Version 1, simpel                                              *
  *  Autor: SDW                                                     *
- *  Re: OOP Uebungsblatt 2, Aufgabe 3: "Spiel (1,2,3)"             *
+ *  Referring to: OOP Uebungsblatt 2, Aufgabe 3: "Spiel (1,2,3)"   *
  *******************************************************************/
 
 #include <stdio.h>

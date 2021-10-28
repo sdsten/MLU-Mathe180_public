@@ -1,7 +1,7 @@
 /**********************************************************************
  *  Kleine Commandline appl. in Java zum Testen d. Loesung zu UB02-03 *
  *  Autor: SDW                                                        *
- *  Re: OOP Uebungsblatt 2, Aufgabe 3                                 * 
+ *  Referring to: OOP Uebungsblatt 2, Aufgabe 3                       * 
  **********************************************************************/
 
 import java.util.Scanner;

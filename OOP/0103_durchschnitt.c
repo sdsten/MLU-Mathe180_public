@@ -1,7 +1,7 @@
 /*******************************************************************
  *  Kleine Commandline appl. in C zum Testen d. Loesung zu UB01-03 *
  *  Autor: SDW                                                     *
- *  Re: OOP Uebungsblatt 1, Aufgabe 3                              * 
+ *  Referring to: OOP Uebungsblatt 1, Aufgabe 3                    * 
  *******************************************************************/
 
 #include <stdio.h>
