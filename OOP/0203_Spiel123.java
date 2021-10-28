@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class Spiel123 {
+public class 0203_Spiel123 {
     public static void main(String args[]) {
 
         Scanner scan = new Scanner(System.in);
