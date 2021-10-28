@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class 0301operatorPrecedence {
+public class operatorPrecedence0301 {
     public static void main(String args[]) {
 
         Scanner scan = new Scanner(System.in);
@@ -29,9 +29,13 @@ public class 0301operatorPrecedence {
         System.out.println(!b && a || b && !a);
         System.out.println((((!b) && a) || (b && (!a))));
         System.out.println(j++ - i * k / i);
-        System.out.println((((j++) - ((i * k) / i))));
+        j = 3;   // incr. operators change the value so this is to set them back
+        System.out.println(((j++) - ((i * k) / i)));
+        j = 3;
         System.out.println(j - ++i * k / i);
+        i = 8;
         System.out.println((j - (((++i) * k) / i)));
+        i = 8;
         System.out.println(0 < -k || a == false ^ b == true);
         System.out.println(((0 < (-k)) || ((a == false) ^ (b == true))));
         System.out.println(i <= k * j & a);
