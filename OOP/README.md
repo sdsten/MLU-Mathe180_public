@@ -7,5 +7,5 @@ Filenames: Filenames that start with 4-digit-numbers are referring to exercises 
 
 License/Copyright: I'm the original author of all .c, .java., .txt, .md -files if not otherwise stated in the particular file. Everything is closed source except otherwise stated in the particular file (everything that -is- opensource is released under MIT License, but there's nothing useful for anybody in here anyway).
 
-MLU-ID: aqvnp / 205 233 155
+MLU-ID: aqvnp / 205 233 155<br>
 Contact: sdstenerud@gmail.com
