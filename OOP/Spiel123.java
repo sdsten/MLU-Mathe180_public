@@ -27,7 +27,7 @@ public class Spiel123 {
 
         while (true) {
             do {
-                System.out.printf("Player " + (isPlayer1 ? "1" : "2") + ": ");
+                System.out.printf("Player " + (isPlayer1 ? "1: " : "2: "));
                 num = scan.nextInt();
             } while (num <=0 || num > 3);
             sum += num;
@@ -39,8 +39,8 @@ public class Spiel123 {
 
         // Ausgabe des Gewinners und der Differenz
         int diff = sum - limit;
-        System.out.printf("Player " + (isPlayer1 ? "1" : "2") + "lost.\nDifference: ");
-        System.out.println(diff);
+        System.out.println("Player " + (isPlayer1 ? "1" : "2") + " lost.");
+        System.out.println("Difference: " + diff);
     }
 };
 

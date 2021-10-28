@@ -13,12 +13,11 @@ int main(void)
 
     // Eingabe der Grenze
     int limit = 0;
-    do
+    while (limit < 8);
     {
         printf("Set limit (min 8): ");
         scanf("%d", &limit);
     }
-    while (limit < 8);
 
 
     int num1 = 0;
@@ -30,7 +29,7 @@ int main(void)
     int flip = 0;
 
     // Zahleneingaben der Spieler
-    while (1)
+    while (true)
     {
         do
         {
