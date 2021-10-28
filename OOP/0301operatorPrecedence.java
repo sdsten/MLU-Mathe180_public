@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class 0301_operatorPrecedence {
+public class 0301operatorPrecedence {
     public static void main(String args[]) {
 
         Scanner scan = new Scanner(System.in);
