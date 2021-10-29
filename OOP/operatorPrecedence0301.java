@@ -7,8 +7,6 @@
 public class operatorPrecedence0301 {
     public static void main(String args[]) {
 
-        Scanner scan = new Scanner(System.in);
-
         // values
         int i = 8;
         int j = 3;
