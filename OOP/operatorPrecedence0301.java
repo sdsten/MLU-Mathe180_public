@@ -15,16 +15,16 @@ public class operatorPrecedence0301 {
         int i = 8;
         int j = 3;
         int k = 2;
-        double f = 1.5;          // kd
-        double g = 4.25;         // ld
+        double kd = 1.5;          
+        double ld = 4.25;         
         boolean a = true;
         boolean b = false;
 
         // expressions
         System.out.println(i % j - i * k + i);
         System.out.println((((i % j) - (i * k)) + i));
-        System.out.println(g % k + f);
-        System.out.println(((g % k) + f));
+        System.out.println(ld % k + kd);
+        System.out.println(((ld % k) + kd));
         System.out.println(!b && a || b && !a);
         System.out.println((((!b) && a) || (b && (!a))));
         System.out.println(j++ - i * k / i);
@@ -52,10 +52,10 @@ public class operatorPrecedence0301 {
  *  Values:                                                        *
  *  i = 8; kd = 1.5; a = true                                      *
  *  j = 3; ld = 4.25; b = false                                    *
- *  k = 2;                                                          *
+ *  k = 2;                                                         *
  *  Expressions:                                                   *
  *  1. i % j - i * k + i                                           *
- *  2. md % k + kd                                                 *
+ *  2. ld % k + kd           // hier stand "md" auf dem UeB???     *
  *  3. !b && a || b && !a                                          *
  *  4. j++ - i * k / i                                             *
  *  5. j - ++i * k / i                                             *
