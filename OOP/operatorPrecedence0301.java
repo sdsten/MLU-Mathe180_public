@@ -4,8 +4,6 @@
  *  Re: OOP Uebungsblatt 3, Aufgabe 1 (Operator Precedence)           * 
  **********************************************************************/
 
-import java.util.Scanner;
-
 public class operatorPrecedence0301 {
     public static void main(String args[]) {
 
