@@ -74,8 +74,7 @@ void stack_overflow(void)
     exit(1);
 }
 
-// see ../10_Projects/README.md#programming-project-01, "Details"
-// for explanation of '__attribute__((noreturn))'
+
 __attribute__((noreturn)) void stack_underflow(void)
 {
     printf("Parentheses/braces are -not- nested properly (Stack underflow).\n");
