@@ -26,7 +26,7 @@ public class operatorPrecedence0301 {
         System.out.println((((!b) && a) || (b && (!a))));
 
         System.out.println(j++ - i * k / i);
-        j = 3;   // incr. operators have side-effects so this is to reset them
+        j = 3;   // incr. operators have side-effects so this is to 'reset' them
         System.out.println((((j++) - ((i * k) / i))));
         j = 3;
 
