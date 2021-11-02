@@ -40,9 +40,6 @@ public class operatorPrecedence0301 {
 
         System.out.println(i <= k * j & a);
         System.out.println(((i <= (k * j)) & a));
-
-
-
     }
 };
 
