@@ -1,7 +1,6 @@
 /**********************************************************************
- *  Praktischer Test meiner Loesung zu UB03-01                        *
- *  Autor: SDW                                                        *
  *  Re: OOP Uebungsblatt 3, Aufgabe 1 (Operator Precedence)           * 
+ *  Meine Loesungen im Praxistest                                     *
  **********************************************************************/
 
 public class operatorPrecedence0301 {
@@ -43,10 +42,31 @@ public class operatorPrecedence0301 {
     }
 };
 
+/**********************************
+ *  Output:                       *
+ *  -------                       *
+ *  -6                            *         
+ *  -6                            *
+ *  1.75                          *
+ *  1.75                          *
+ *  true                          *
+ *  true                          *
+ *  1                             *
+ *  1                             *
+ *  1                             *
+ *  1                             *
+ *  false                         *
+ *  false                         *
+ *  false                         *
+ *  false                         *
+ **********************************/
+
+
 
 /*******************************************************************
- *  Aufgabenstellung:                                              *
+ *  Originale Aufgabenstellung:                                    *
  *  Paranthecize and determine value of expressions                *
+ *  -----------------------------------------------                *
  *  Values:                                                        *
  *  i = 8; kd = 1.5; a = true                                      *
  *  j = 3; ld = 4.25; b = false                                    *
