@@ -1,10 +1,10 @@
-/*********************************************************
- *  Random practice project inspired by OOP Aufgabe 0301 *
- *  Tiny commandline tool to check whether parentheses   *
- *  or braces are nested properly.                       *
- *  Allowed Input: ( ) { }       no content in between!  *
- *  Released under MIT Licence, copyright by SDW         *
- *********************************************************/
+/******************************************************************
+ *  Random practice project related to OOP UB 3 Aufgabe 01        *
+ *  Tiny useless commandline tool to check whether parentheses    *
+ *  or braces are nested properly.                                *
+ *----------------------------------------------------------------*
+ *  Allowed Input: ( ) { }       no content in between!           *
+ ******************************************************************/
 
 
 #include <stdio.h>
