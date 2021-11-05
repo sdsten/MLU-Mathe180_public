@@ -8,7 +8,7 @@ public class Fehlersuche {
         int hW = in.nextInt ();             // added missing type
         int antwort;
                                             // removed useless hW declaration
-        antwort = 2 * hW;                   //  changed 2.0 to 2
+        antwort = 2.0 * hW;                   //  changed 2.0 to 2
         if(antwort == 42) System.out.println("Korrekt!"); // changed = to ==
         else System.out.println("Falsch");
     }
