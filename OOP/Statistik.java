@@ -1,14 +1,5 @@
 // UeB 6, Aufgabe 2, FINISHED, all tests pass, no commas at the end
 
-/***********************************************
- * Note: Sorry, der Code ist etwas messy.      *
- * Ich hatte diese Woche eine Klausur und      *
- * leider keine Zeit fuer alles ueber das      *
- * "make it work (somehow)"-Stadium hinaus :/  *
- * Ich hoffe auf unserem Anfaenger-Level       *
- * ist das trotzdem ok.                        *
- * *********************************************/
-
 import java.util.Scanner;
 
 public class Statistik {

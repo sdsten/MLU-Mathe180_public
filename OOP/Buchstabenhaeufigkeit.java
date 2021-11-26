@@ -1,14 +1,5 @@
 // UeB 6, Aufgabe 1, FINISHED, all tests pass
 
-/***********************************************
- * Note: Sorry, der Code ist etwas messy.      *
- * Ich hatte diese Woche eine Klausur und      *
- * leider keine Zeit fuer alles ueber das      *
- * "make it work (somehow)"-Stadium hinaus :/  *
- * Ich hoffe auf unserem Anfaenger-Level       *
- * ist das trotzdem ok.                        *
- * *********************************************/
-
 public class Buchstabenhaeufigkeit {
     public static void main(String[] args) {
 
