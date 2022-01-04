@@ -64,15 +64,15 @@ public class TodoListe {
     
 
     // CREATES OUTPUT
-    public static void ausgabe (TodoListe liste, int progressBarBreiteInZeichen) {
+    public static void ausgabe (TodoListe liste, int breiteInZeichen) {
         
         // output liste 
         for (int i = 0; i < liste.indexEmpty; i++) {
             if (liste.aufgaben[i].erledigt) {
-                System.out.println("[x] " + liste.aufgaben[i].beschreibung);
+                System.out.println("[x] " + liste.aufgaben[i].nameAufgabe);
             }
             else {
-                System.out.println("[ ] " + liste.aufgaben[i].beschreibung);
+                System.out.println("[ ] " + liste.aufgaben[i].nameAufgabe);
             }
         }
         
@@ -81,7 +81,7 @@ public class TodoListe {
         
         // output progress
         System.out.println("Erledigt: " + ProgressBar.gibProzente(bar) + "%");
-        System.out.println("Erledigt: " + ProgressBar.gibProgressBar(bar, progressBarBreiteInZeichen));
+        System.out.println("Erledigt: " + ProgressBar.gibProgressBar(bar, breiteInZeichen));
     }
     
 

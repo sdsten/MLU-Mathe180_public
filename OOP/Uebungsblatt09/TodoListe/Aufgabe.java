@@ -2,12 +2,10 @@
 
 public class Aufgabe {
     
-    String beschreibung = "";
+    String nameAufgabe = "";
     boolean erledigt = false;
 
     public Aufgabe (String beschreibung) {
-        this.beschreibung = beschreibung;
+        this.nameAufgabe = beschreibung;
     }
-    
-    
 }

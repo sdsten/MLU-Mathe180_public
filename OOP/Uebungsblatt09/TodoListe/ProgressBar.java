@@ -1,14 +1,15 @@
 public class ProgressBar {
     
-    // constructor
-    public ProgressBar (int all, int erl) {
-        this.all = all;
-        this.erl = erl;
-    }
-    
     int all;
     int erl;
+
+    // constructor
+    public ProgressBar (int alle, int erledigt) {
+        this.all = alle;
+        this.erl = erledigt;
+    }
     
+
     // CALCULATES PROGRESS IN PERCENTAGE
     public static int gibProzente (ProgressBar progressbar) {
         
@@ -16,7 +17,7 @@ public class ProgressBar {
         
         // if all is 0, no calculation necessary since prozente is zero-initialized anyway
         if (progressbar.all != 0) {
-            prozente = (int)(((double)progressbar.erl / progressbar.all)*100);
+            prozente = (int)(((double)progressbar.erl / progressbar.all) * 100);
         }
         return prozente;
     }
@@ -34,7 +35,7 @@ public class ProgressBar {
         }
         // ...otherwise calculate num of equals and spaces neededpublic static int gibProzente (ProgressBar progres
         else {
-            numEquals = (int)((gibProzente(progressbar)*0.01) * breiteInZeichen);
+            numEquals = (int)((gibProzente(progressbar) * breiteInZeichen) / 100);
             numSpaces = breiteInZeichen - numEquals;
         }
         
