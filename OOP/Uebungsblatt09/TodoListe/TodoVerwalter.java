@@ -8,7 +8,7 @@ public class TodoVerwalter {
             //leer -> erzeuge leere liste
             //aufg -> neue aufgabe
             //erl  -> markiere index als erledigt
-            //anz0 -> gibt anzahl aller aufgaben zurücl
+            //anz0 -> gibt anzahl aller aufgaben zurück
             //anz1 -> gibt anzahl der erledigten zurück
             
             //ausg -> alles ausgeben
