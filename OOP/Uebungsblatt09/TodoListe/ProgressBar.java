@@ -13,13 +13,7 @@ public class ProgressBar {
     // CALCULATES PROGRESS IN PERCENTAGE
     public static int gibProzente (ProgressBar progressbar) {
         
-        int prozente = 0;
-        
-        // if all is 0, no calculation necessary since prozente is zero-initialized anyway
-        if (progressbar.all != 0) {
-            prozente = (int)(((double)progressbar.erl / progressbar.all) * 100);
-        }
-        return prozente;
+        return (int)(((double)progressbar.erl / progressbar.all) * 100);
     }
     
     // CREATES PROGRESS BAR
