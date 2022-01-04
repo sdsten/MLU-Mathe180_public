@@ -33,7 +33,7 @@ public class ProgressBar {
         if (progressbar.all == 0 || progressbar.erl == 0) {
             numSpaces = breiteInZeichen;
         }
-        // ...otherwise calculate num of equals and spaces neededpublic static int gibProzente (ProgressBar progres
+        // ...otherwise calculate num of equals and spaces needed
         else {
             numEquals = (int)((gibProzente(progressbar) * breiteInZeichen) / 100);
             numSpaces = breiteInZeichen - numEquals;
