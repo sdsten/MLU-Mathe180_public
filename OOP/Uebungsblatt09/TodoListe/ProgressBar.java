@@ -5,8 +5,8 @@ public class ProgressBar {
 
     // constructor
     public ProgressBar (int alle, int erledigt) {
-        this.all = alle;
-        this.erl = erledigt;
+        all = alle;
+        erl = erledigt;
     }
     
 

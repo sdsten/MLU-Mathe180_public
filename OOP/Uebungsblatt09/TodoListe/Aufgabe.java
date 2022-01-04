@@ -6,6 +6,6 @@ public class Aufgabe {
     boolean erledigt = false;
 
     public Aufgabe (String beschreibung) {
-        this.nameAufgabe = beschreibung;
+        nameAufgabe = beschreibung;
     }
 }
