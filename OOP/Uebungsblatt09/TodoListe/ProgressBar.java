@@ -11,38 +11,54 @@ public class ProgressBar {
     
 
     // CALCULATES PROGRESS IN PERCENTAGE
-    public static int gibProzente (ProgressBar progressbar) {
+    public static int gibProzente (ProgressBar bar) {
+        
+        int prozente = 0;
+            
+        // check for division by 0
+        if (bar.all != 0) {
+            prozente = (int)(((double)bar.erl / bar.all) * 100);
+        }
+        // if all IS 0, no calculation necessary since prozente is zero-initialized anyway
+        return prozente;
+    }
+
+/*
+    Note: Division by zero -check is technically obsolete here and simply
         
         return (int)(((double)progressbar.erl / progressbar.all) * 100);
-    }
-    
+
+    would work with progressbar.all = 0!
+    Reason: float-division by zero results in Infinity and x/Infinity is always 0.0 (in Java).
+*/ 
+
     // CREATES PROGRESS BAR
-    public static String gibProgressBar (ProgressBar progressbar, int breiteInZeichen) {
+    public static String gibProgressBar (ProgressBar bar, int breiteInZeichen) {
         
         int numEquals = 0;
         int numSpaces = 0;
-        StringBuilder bar = new StringBuilder();
+        StringBuilder barString = new StringBuilder();
         
         // no erledigte Aufgaben or none at all: progressbar empty
-        if (progressbar.all == 0 || progressbar.erl == 0) {
+        if (bar.all == 0 || bar.erl == 0) {
             numSpaces = breiteInZeichen;
         }
         // ...otherwise calculate num of equals and spaces needed
         else {
-            numEquals = (int)((gibProzente(progressbar) * breiteInZeichen) / 100);
+            numEquals = (int)((gibProzente(bar) * breiteInZeichen) / 100);
             numSpaces = breiteInZeichen - numEquals;
         }
         
         // generate progressbar string
-        bar.append("[");
+        barString.append("[");
         for (int i = 0; i < numEquals; i++) {
-            bar.append("=");
+            barString.append("=");
         }
         for (int i = 0; i < numSpaces; i++) {
-            bar.append(" ");
+            barString.append(" ");
         }
-        bar.append("]");
+        barString.append("]");
         
-        return bar.toString();
+        return barString.toString();
     }
 }
