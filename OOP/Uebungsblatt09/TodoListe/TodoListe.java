@@ -2,7 +2,7 @@ public class TodoListe {
     
     Aufgabe[] aufgaben = null;
     int indexEmpty = 0;
-    
+
 
     // CREATES A NEW EMPTY TODOLISTE
     public static TodoListe erzeugeLeereListe (int maxAnzahl) {
@@ -78,7 +78,14 @@ public class TodoListe {
         
         // create progressbar
         ProgressBar bar = new ProgressBar(gibAnzahl(liste, false), gibAnzahl(liste, true));
-        
+    /*
+        // or without constructor:
+        ProgressBar bar = new ProgressBar();
+        bar.all = gibAnzahl(liste, false);
+        bar.erl = gibAnzahl(liste, true);
+    */
+
+
         // output progress
         System.out.println("Erledigt: " + ProgressBar.gibProzente(bar) + "%");
         System.out.println("Erledigt: " + ProgressBar.gibProgressBar(bar, breiteInZeichen));

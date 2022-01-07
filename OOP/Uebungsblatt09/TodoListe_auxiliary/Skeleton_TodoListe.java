@@ -1,6 +1,6 @@
 public class TodoListe {
 
-    
+
 
     // CREATES A NEW EMPTY TODOLISTE
     public static TodoListe erzeugeLeereListe (int maxAnzahl) {
@@ -23,7 +23,7 @@ public class TodoListe {
     }
     
     // CREATES OUTPUT
-    public static void ausgabe (TodoListe liste, int progressBarBreiteInZeichen) {
+    public static void ausgabe (TodoListe liste, int breiteInZeichen) {
 
     }
     
@@ -32,3 +32,5 @@ public class TodoListe {
 
     }
 }
+
+

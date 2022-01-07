@@ -1,5 +1,3 @@
-// Uebungsblatt 9, Aufgabe 2
-
 public class Aufgabe {
     
     String nameAufgabe = "";
@@ -7,5 +5,6 @@ public class Aufgabe {
 
     public Aufgabe (String beschreibung) {
         nameAufgabe = beschreibung;
+        // (bools default to false)
     }
 }

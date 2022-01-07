@@ -3,12 +3,13 @@ public class ProgressBar {
     int all;
     int erl;
 
-    // constructor
-    public ProgressBar (int alle, int erledigt) {
-        all = alle;
-        erl = erledigt;
-    }
     
+    // CONSTRUCTOR
+    public ProgressBar (int all, int erl) {
+        this.all = all;
+        this.erl = erl;
+    }
+   
 
     // CALCULATES PROGRESS IN PERCENTAGE
     public static int gibProzente (ProgressBar bar) {
@@ -19,7 +20,7 @@ public class ProgressBar {
         if (bar.all != 0) {
             prozente = (int)(((double)bar.erl / bar.all) * 100);
         }
-        // if all IS 0, no calculation necessary since prozente is zero-initialized anyway
+        // if bar.all IS 0, no calculation necessary since prozente is zero-initialized anyway
         return prozente;
     }
 
@@ -28,7 +29,7 @@ public class ProgressBar {
         
         return (int)(((double)progressbar.erl / progressbar.all) * 100);
 
-    would work with progressbar.all = 0!
+    would work too, also with bar.all = 0
     Reason: float-division by zero results in Infinity and x/Infinity is always 0.0 (in Java).
 */ 
 
