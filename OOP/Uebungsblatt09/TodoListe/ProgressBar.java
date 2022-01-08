@@ -46,7 +46,7 @@ public class ProgressBar {
         }
         // ...otherwise calculate num of equals and spaces needed
         else {
-            numEquals = (int)((gibProzente(bar) * breiteInZeichen) / 100);
+            numEquals = ((gibProzente(bar) * breiteInZeichen) / 100);
             numSpaces = breiteInZeichen - numEquals;
         }
         

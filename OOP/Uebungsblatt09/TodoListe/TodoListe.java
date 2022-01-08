@@ -18,12 +18,10 @@ public class TodoListe {
         // check if list is full, if so return false
         if (liste.indexEmpty == liste.aufgaben.length) {
             return false;
-            
         }
         // if list is not full, add task and return true
         else {
-            Aufgabe neueAufgabe = new Aufgabe(beschreibung);
-            liste.aufgaben[liste.indexEmpty] = neueAufgabe;
+            liste.aufgaben[liste.indexEmpty] = new Aufgabe(beschreibung);
             liste.indexEmpty++;
             return true;
         }
@@ -33,10 +31,14 @@ public class TodoListe {
     // RETURNS NUM OF ERL TASKS (nurErledigte true) OR ALL TASKS (false)
     public static int gibAnzahl (TodoListe liste, boolean nurErledigte) {
         
-        // counts erledigte aufgaben
-        if (nurErledigte) {
-            int numAufgaben = 0;
 
+        // returns all aufgaben
+        if (nurErledigte == false) {
+            return liste.indexEmpty;
+        }
+        // counts erledigte aufgaben
+        else {
+            int numAufgaben = 0;
             for (int i = 0; i < liste.indexEmpty; i++) {
                 if (liste.aufgaben[i].erledigt) {
                     numAufgaben++;
@@ -44,17 +46,13 @@ public class TodoListe {
             }
             return numAufgaben;
         }
-        // returns all aufgaben
-        else {
-            return liste.indexEmpty;
-        }
     }
     
 
     // MARKS AUFGABE AS ERLEDIGT
     public static void markiereAlsErledigt (TodoListe liste, int index) {
         
-        if (index > liste.indexEmpty || index < 0) {
+        if (index < 0 || index >= liste.indexEmpty) {
             return;
         }
         else {
@@ -95,18 +93,17 @@ public class TodoListe {
     // REMOVES AN AUFGABE
     public static void entferne (TodoListe liste, int index) {
         // check if index is in range
-        if (index > liste.indexEmpty || index < 0) {
+        if (index < 0 || index >= liste.indexEmpty) {
             return;
         }
-        // remove Aufgabe, fill gap, decr. indexEmpty
+        // overwrite index with index+1, same for following tasks
         else {
-            liste.aufgaben[index] = null;
-            
             for (int i = index; i < liste.indexEmpty-1; i++) {
                 liste.aufgaben[i] = liste.aufgaben[i+1];
             }
-            liste.aufgaben[liste.aufgaben.length-1] = null;
+            liste.aufgaben[liste.indexEmpty-1] = null;
             liste.indexEmpty--;
         }
     }
 }
+
