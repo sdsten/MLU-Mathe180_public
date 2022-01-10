@@ -1,6 +1,7 @@
 public class TodoListe {
 
 
+
     // CREATES A NEW EMPTY TODOLISTE
     public static TodoListe erzeugeLeereListe (int maxAnzahl) {
 
@@ -13,7 +14,7 @@ public class TodoListe {
     }
     
 
-    // RETURNS NUM OF ERL TASKS (nurErledigte true) OR ALL TASKS (false)
+    // RETURNS NUM OF ALL TASKS (nurErledigte false) OR ERL TASKS (true)
     public static int gibAnzahl (TodoListe liste, boolean nurErledigte) {
 
     }

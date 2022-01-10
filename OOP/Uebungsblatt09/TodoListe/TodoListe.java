@@ -28,7 +28,7 @@ public class TodoListe {
     }
     
 
-    // RETURNS NUM OF ERL TASKS (nurErledigte true) OR ALL TASKS (false)
+    // RETURNS NUM OF ALL TASKS (nurErledigte false) OR ERL TASKS (true)
     public static int gibAnzahl (TodoListe liste, boolean nurErledigte) {
         
 
@@ -101,8 +101,8 @@ public class TodoListe {
             for (int i = index; i < liste.indexEmpty-1; i++) {
                 liste.aufgaben[i] = liste.aufgaben[i+1];
             }
-            liste.aufgaben[liste.indexEmpty-1] = null;
             liste.indexEmpty--;
+            liste.aufgaben[liste.indexEmpty] = null;
         }
     }
 }
