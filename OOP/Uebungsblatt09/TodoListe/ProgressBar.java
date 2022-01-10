@@ -5,9 +5,9 @@ public class ProgressBar {
 
     
     // CONSTRUCTOR
-    public ProgressBar (int all, int erl) {
-        this.all = all;
-        this.erl = erl;
+    public ProgressBar (TodoListe liste) {
+        all = TodoListe.gibAnzahl(liste, false);
+        erl = TodoListe.gibAnzahl(liste, true);
     }
    
 
