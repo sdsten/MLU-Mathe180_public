@@ -1,6 +1,6 @@
 # README
 
-Miscellaneous personal content collection related to my university studies.<br>
+Misc. university stuff that's supposed to be public for one reason or another.<br>
 [Not useful for the general public.]
 
 
