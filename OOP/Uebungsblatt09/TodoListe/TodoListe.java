@@ -75,9 +75,9 @@ public class TodoListe {
         }
         
         // create progressbar
-        int alle = gibAnzahl(liste, false);
-        int erledigt = gibAnzahl(liste, true);
-        ProgressBar bar = new ProgressBar(alle, erledigt);
+        int numAufgabenAlle = gibAnzahl(liste, false);
+        int numAufgabenErledigt = gibAnzahl(liste, true);
+        ProgressBar bar = new ProgressBar(numAufgabenAlle, numAufgabenErledigt);
 
         // output progress
         System.out.println("Erledigt: " + ProgressBar.gibProzente(bar) + "%");

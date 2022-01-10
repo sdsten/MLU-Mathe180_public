@@ -1,9 +1,9 @@
 public class ProgressBar {
     
 
+
     // CALCULATES PROGRESS IN PERCENTAGE
     public static int gibProzente (ProgressBar bar) {
-
 
     }
     

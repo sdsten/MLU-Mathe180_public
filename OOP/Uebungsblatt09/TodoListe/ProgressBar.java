@@ -18,18 +18,14 @@ public class ProgressBar {
             
         // check for division by 0
         if (bar.all != 0) {
-            prozente = (int)(((double)bar.erl / bar.all) * 100);
+            prozente = (bar.erl * 100) / bar.all;
         }
         // if bar.all IS 0, no calculation necessary since prozente is zero-initialized anyway
         return prozente;
     }
 
 /*
-    Note: Division by zero -check is technically obsolete here and simply
-        
-        return (int)(((double)progressbar.erl / progressbar.all) * 100);
-
-    would work too, also with bar.all = 0
+    Note: Division by zero -check is technically obsolete here
     Reason: float-division by zero results in Infinity and x/Infinity is always 0.0 (in Java).
 */ 
 

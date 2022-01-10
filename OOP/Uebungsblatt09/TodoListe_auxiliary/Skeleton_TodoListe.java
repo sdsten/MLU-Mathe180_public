@@ -1,7 +1,6 @@
 public class TodoListe {
 
 
-
     // CREATES A NEW EMPTY TODOLISTE
     public static TodoListe erzeugeLeereListe (int maxAnzahl) {
 
