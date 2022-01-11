@@ -25,7 +25,8 @@ public class ProgressBar {
     }
 
 /*
-    Note: Division by zero -check is technically obsolete here
+    Note: Division by zero check would be obsolete if we do it this way:
+        prozente = (int)(((double)bar.erl / bar.all) * 100);
     Reason: float-division by zero results in Infinity and x/Infinity is always 0.0 (in Java).
 */ 
 
