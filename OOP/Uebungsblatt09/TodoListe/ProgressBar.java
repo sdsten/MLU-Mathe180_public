@@ -23,12 +23,7 @@ public class ProgressBar {
         // if bar.all IS 0, no calculation necessary since prozente is zero-initialized anyway
         return prozente;
     }
-
-/*
-    Note: Division by zero check would be obsolete if we do it this way:
-        prozente = (int)(((double)bar.erl / bar.all) * 100);
-    Reason: float-division by zero results in Infinity and x/Infinity is always 0.0 (in Java).
-*/ 
+    
 
     // CREATES PROGRESS BAR
     public static String gibProgressBar (ProgressBar bar, int breiteInZeichen) {
